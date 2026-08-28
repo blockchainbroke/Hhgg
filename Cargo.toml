@@ -1,0 +1,23 @@
+[workspace]
+members = [
+  "contracts/access",
+  # "contracts/hero",     # Batch 2
+  # "contracts/snapshot", # Batch 2
+  # "contracts/veGOLD",   # Batch 3
+  # "contracts/pvp",      # Batch 3
+]
+resolver = "2"
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "z"
+panic = "abort"
+overflow-checks = true
+
+# Workspace-wide lint configuration. These lints are part of the
+# "no unwrap, no 3-in-1 owner, panic-on-default" guardrails in
+# SPEC.md and should not be relaxed at the crate level.
+[workspace.lints.rust]
+unsafe_code = "forbid"
+unused_must_use = "deny"
