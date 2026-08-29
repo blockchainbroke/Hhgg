@@ -1,0 +1,13 @@
+[package]
+name = "pvp"
+version = "0.1.0"
+edition = "2021"
+description = "Commit-reveal async PvP arena"
+license = "MIT"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+near-sdk = "5.1.0"
