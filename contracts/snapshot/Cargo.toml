@@ -1,0 +1,16 @@
+[package]
+name = "snapshot"
+version = "0.1.0"
+edition = "2021"
+description = "NearVerse epoch-keyed hero snapshot contract (no live cross-contract reads)"
+license = "MIT"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+near-sdk = "5.1.0"
+
+[dev-dependencies]
+near-sdk = { version = "5.1.0", features = ["unit-testing"] }
