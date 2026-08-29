@@ -1,8 +1,8 @@
 [workspace]
 members = [
   "contracts/access",
-  # "contracts/hero",   # Batch 1
-  # "contracts/snapshot", # Batch 1
+  "contracts/hero",
+  "contracts/snapshot",
   # "contracts/veGOLD",   # Batch 2
   # "contracts/pvp",      # Batch 2
 ]
